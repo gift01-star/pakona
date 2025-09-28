@@ -5,8 +5,8 @@ import axios from 'axios';
 
 // Correct API configuration
 const API = axios.create({
-  baseURL: 'http://localhost:3000/api', // backend
-  withCredentials: true,
+baseURL: 'https://jubilant-eureka-v67qjwrwj7wvcwrp7-3000.app.github.dev/api',//'http://localhost:3000/api', // backend
+withCredentials: true,
 });
 
 function Register() {

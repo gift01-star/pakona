@@ -11,7 +11,7 @@ import BookSession from './pages/BookSession';
 import TutorSessions from './pages/TutorSessions';
 import ResetPassword from './pages/ResetPassword';
 import Payment from './pages/Payment';
-import Messages from './pages/Messages';
+//import Messages from './pages/Messages';
 import Home from './pages/Home';
 import TutorSearch from './pages/TutorSearch';
 
@@ -32,9 +32,9 @@ function App() {
 
     // Cleanup socket listeners on unmount
     return () => {
-      socket.off('connect');
-      socket.off('message');
-      socket.off('disconnect');
+     // socket.off('connect');
+      //ocket.off('message');
+      //socket.off('disconnect');
     };
   }, []);
 
@@ -48,7 +48,8 @@ function App() {
         <Route path="/student-profile" element={<StudentProfile />} />
         <Route path="/tutor-profile" element={<TutorProfile />} />
         <Route path="/payment" element={<Payment />} />
-        <Route path="/messages" element={<Messages />} />
+        <Route path="/messages" element={<h1>Messages is working!</h1>} />
+        {/*<Route path="/messages" element={<Messages />} />*/}
         <Route path="/book-session" element={<BookSession />} /> 
         <Route path="/tutor-sessions" element={<TutorSessions />} />
         <Route path="/reset-password" element={<ResetPassword />} />
